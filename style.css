@@ -13,7 +13,7 @@
 }
 
 .hero {
-  background-image: url("images/donation5.jpg");
+  background-image: url("images/donation.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,8 +31,8 @@
   position: absolute;
   background: linear-gradient(
     0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 0, 0, 0.7346288857339811) 24%,
+    rgba(0, 0, 0, 0.9223039557619923) 0%,
+    rgba(0, 0, 0, 0.7654412106639531) 32%,
     rgba(255, 255, 255, 0) 72%
   );
 
@@ -41,24 +41,22 @@
 }
 
 h1 {
-  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 65px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: white;
   max-width: 900px;
 }
 
 h2 {
-  font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .hero p {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: white;
 }
 
@@ -68,8 +66,10 @@ h2 {
   color: white;
   padding: 12px 15px;
   font-weight: 600;
+  font-size: 17px;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .donate-today {
@@ -77,8 +77,8 @@ h2 {
 }
 
 .donate-today p {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 30px;
 }
 
 .donate-amounts {
@@ -87,12 +87,12 @@ h2 {
 }
 
 .donate-amounts div {
-  font-family: "Inter", sans-serif;
   padding: 20px 20px;
-  background-color: #fafafa;
+  background-color: #f6f4f4;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 700;
+  font-size: 17px;
 }
 
 #amount-selected {
@@ -123,19 +123,12 @@ input:focus {
   border-bottom: 1px solid #dadada;
 }
 
-#other-amount::after {
-  content: none;
-  background-color: black;
-  width: 50px;
-  height: 5px;
-}
-
 .donate-plan {
   margin-top: 100px;
 }
 
 .donate-plan > p {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 30px;
 }
 
@@ -160,6 +153,7 @@ input:focus {
 #plan-food h3 {
   margin-top: 20px;
   margin-bottom: 12px;
+  font-size: 20px;
 }
 
 #plan-clothes {
@@ -173,6 +167,7 @@ input:focus {
 #plan-clothes h3 {
   margin-top: 20px;
   margin-bottom: 12px;
+  font-size: 20px;
 }
 
 #plan-medicine {
@@ -184,18 +179,81 @@ input:focus {
 }
 
 #plan-medicine h3 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.registration {
+  margin-top: 100px;
+  display: flex;
+  height: 500px;
+}
+
+.registration-banner {
+  width: 40%;
+  background-image: url("images/volunteer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.registration-banner::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(42, 144, 155, 0.4);
+  width: 100%;
+  height: 500px;
+}
+
+.registration-banner div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: 700;
+  z-index: 10;
+  color: #ff5959;
+}
+
+.registration-description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+  background-color: black;
+}
+
+.registration-description h3 {
+  font-size: 28px;
+  color: white;
+}
+
+.registration-description h4 {
+  color: gray;
+  font-size: 18px;
   margin-top: 8px;
-  margin-bottom: 20px;
+}
+
+.registration-description p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: gray;
+  max-width: 500px;
 }
 
 .latest-updates {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .latest-updates p {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 30px;
 }
 
 .subscribe {
@@ -203,21 +261,36 @@ input:focus {
   background-color: #fff4d6;
 }
 
-.subscribe input {
+#subscribe-input {
   background-color: #d9d9d9;
-  padding: 5px 0;
+  padding: 10px 0 10px 7px;
 }
 
 .subscribe button {
   border: none;
   background-color: #ff5959;
   color: white;
-  padding: 5px 3px;
+  padding: 10px 20px;
   cursor: pointer;
-  margin-left: -4px;
+  margin-left: -5px;
+  font-weight: 600;
 }
 
 footer {
   height: 100px;
   background-color: black;
+}
+
+.footer-quote {
+  text-align: center;
+  color: rgb(233, 231, 231);
+  padding-top: 25px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: rgb(143, 142, 142);
+  font-size: 15px;
 }
